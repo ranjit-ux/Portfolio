@@ -233,6 +233,58 @@ header ul a:hover{
 }
 
 
+.info-section{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    width:80%;
+    margin-top: 100px;
+}
+.section-title{
+    font-size: 40px;
+    font-weight: 700;
+}
+
+.info-cards{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    gap:20px;
+    width:100%;
+    height:100%;
+    margin-top:30px;
+}
+.card{
+    display:flex;
+    align-items: flex-start;
+    justify-content: center;
+    position: relative;
+    width:auto;
+    height:40vh;
+    overflow: hidden;
+    border: 1px solid gray;
+    background-color: #080020b7;
+    border-radius: 20px;
+    transition: 0.5s;
+}
+.card h1{
+    position: static;
+    margin: 0;
+    bottom: 40%;
+    left:5%;
+    font-size: 25px;
+    z-index: 1;
+    color:lightgrey;
+}
+.card p{
+    position: static;
+    bottom:3%;
+    left:5%;
+    z-index:1;
+    /* max-width: 300px; */
+    color:gray;
+    font-size: 13px;
+    line-height: 20px;
+}
 
 @media(max-aspect-ratio: 16/9){
     .back-video{
