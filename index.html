@@ -9,7 +9,7 @@
 </head>
 <body>
     <div class="container">
-        <video class="back-video" loop autoplay muted playsinline src="video/galaxy.mp4" type="video/mp4"></video>
+        <!-- <video class="back-video" loop autoplay muted playsinline src="video/galaxy.mp4" type="video/mp4"></video> -->
     </div>
 
     <header>
@@ -17,9 +17,9 @@
             <h1>Ranjit <span class="gradient">Kumar Singh</span></h1>
         </div>
         <ul>
-            <li><a href="#">About</a></li>
-            <li><a href="#">Coding</a></li>
-            <li><a href="#">Projects</a></li>
+            <li><a href="#about-me">About</a></li>
+            <li><a href="#coding-profile">Coding</a></li>
+            <li><a href="#projects">Projects</a></li>
         </ul>
         <div class="box-icons">
             <a href="https://github.com/ranjit-ux" target="_blank"><i class="fa-brands fa-github"></i></a>
@@ -51,6 +51,9 @@
 
         <div class="scroll-down"></div>
     </section>
+
+    <div id="about-me"></div>
+
     <section class="info-section">
         <h1 class="section-title">About Me</h1>
         <div class="info-cards">
@@ -83,6 +86,8 @@
         </div>
     </section>
 
+    <div id="coding-profile"></div>
+
     <section class="coding-profile">
         <h1 class="section-title">Coding Profiles</h1>
         <div class="coding-profile-cards">
@@ -102,9 +107,85 @@
             <div class="codingcard github">
                 <h1 class="name-title"><span class="git" style="color: #de4c36;">Git</span><span class="hub">Hub</span></h1>
                 <a href="https://github.com/ranjit-ux" target="_blank"><img src="images/profile-github.png" alt="GitHub Profile"></a>
+                <p>*Images shown are static references. Visit the profiles for real-time updates!</p>
             </div>
         </div>
     </section>
+
+
+    <div id="projects"></div>
+
+    <section class="my-project"> 
+        <h1 class="section-title autoDisplay" id="projects">Projects</h1>
+        <div class="project-card">
+            <div class="project-vidbox autoBlur" >
+                <video loop id="projectVideo1" src="videos/project1.mp4"></video>
+                <!-- <div class="hover-sign"></div> -->
+            </div>
+            <div class="project-info fadein-left">
+                <h1><span class="gradient">Portfolio</span> Website</h1>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dicta ipsam excepturi ex in corrupti similique dolor nam, suscipit, odio soluta at recusandae nulla, id fugiat!</p>
+                <button><i class='bx bx-link-external' ></i> Website</button>
+        </div>
+        </div>
+
+        <div class="project-card">
+            <div class="project-vidbox autoBlur">
+                <video loop id="projectVideo2" src="videos/project2.mp4"></video>
+            </div>
+            <div class="project-info fadein-left">
+                <h1> Mini <span class="gradient">JavaScript</span> Projects</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam modi voluptates assumenda omnis impedit ipsa veritatis soluta earum minima consequatur.</p>
+                <button><i class='bx bx-link-external' ></i> Website</button>
+            </div>
+        </div>
+
+        <div class="project-card">
+            <div class="project-vidbox autoBlur">
+                <video loop id="projectVideo3" src="videos/project3.mp4"></video>
+            </div>
+                
+            <div class="project-info fadein-left">
+                <h1>Movie <span class="gradient">Landing</span>  Page</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores numquam saepe itaque sapiente odit neque necessitatibus explicabo hic laudantium ipsam nesciunt ducimus, cumque ratione esse.</p>
+                <button><i class='bx bx-link-external' ></i> Website</button>
+            </div>
+        </div>
+    </section>
+
+    <section class="skills-section">
+        <h1 class="section-title">Skills</h1>
+        <div class="skills-box">
+            <img clas="skills-image" src="images/programming-concept-illustration.png" alt="animated_image">
+        
+
+            <div class="my-skills">
+                <p>I possess a strong command of C++ with a solid foundation in <span class="gradient">Data Structures and Algorithms</span>, specializing in problem-solving and competitive programming. I'm proficient in <span class="gradient">frontend web development</span> using HTML, CSS, JavaScript, React, and Tailwind CSS, and I'm learning backend technologies like Node.js, Express, and MongoDB. I'm familiar with Git, <span class="gradient">GitHub</span>, and version control best practices, and I follow clean coding principles and Agile workflows. Always eager to learn, I continuously upskill myself with the latest tech trends and tools to build scalable, efficient, and user-focused applications.</p>
+            </div>
+            <div class="slider" reverse="true" style="
+                --width:100px;
+                --height:100px;
+                --quantity:9;
+                ">
+                <div class="list">
+                    <div class="item" style="--position:1"><img src="images/python-programming-language-icon.webp" alt="slider-image"></div>
+                    <div class="item" style="--position:2"><img src="images/CSS3_logo.png" alt="slider-image"></div>
+                    <div class="item" style="--position:3"><img src="images/github_logo.png" alt="slider-image"></div>
+                    <div class="item" style="--position:4"><img src="images/JavaScript_logo.png" alt="slider-image"></div>
+                    <div class="item" style="--position:5"><img src="images/React.webp" alt="slider-image"></div>
+                    <div class="item" style="--position:6"><img src="images/tailwing_logo.png" alt="slider-image"></div>
+                    <div class="item" style="--position:7"><img src="images/img.icons8.png" alt="slider-image"></div>
+                    <div class="item" style="--position:8"><img src="images/html5_logo.png" alt="slider-image"></div>
+                    <div class="item" style="--position:9"><img src="images/nextJS_logo.png" alt="slider-image"></div>
+                </div>
+            </div>
+        </div>
+
+        
+    </section>
+
+
+
     <script src="script.js"></script>
 </body>
 </html>
