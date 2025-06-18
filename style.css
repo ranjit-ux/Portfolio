@@ -694,6 +694,22 @@ header ul a:hover{
 
 
 
+.contact{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 90vh;
+}
+.contact-info{
+    display: flex;
+    height:100vh;
+    align-items: center;
+    justify-content: space-evenly;
+    border:1px solid white;
+}
+
+
+
 @media(max-aspect-ratio: 16/9){
     .back-video{
         width:auto;
