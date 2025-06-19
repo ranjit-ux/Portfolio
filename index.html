@@ -32,7 +32,7 @@
     </div>
 
     <section class="hero">
-        <div class="hero-info">
+        <div class="hero-info autoBlur">
             <div class="hero-info-title">
                 <i class="fa-brands fa-sketch"></i>
                 Front-end Developer Portfolio
@@ -55,7 +55,7 @@
     <div id="about-me"></div>
 
     <section class="info-section">
-        <h1 class="section-title">About Me</h1>
+        <h1 class="section-title autoDisplay">About Me</h1>
         <div class="info-cards">
             <div class="card myinfo">
                 <!-- <img src="images/grid1.png" alt=""> -->
@@ -89,7 +89,7 @@
     <div id="coding-profile"></div>
 
     <section class="coding-profile">
-        <h1 class="section-title">Coding Profiles</h1>
+        <h1 class="section-title autoDisplay">Coding Profiles</h1>
         <div class="coding-profile-cards">
             <div class="codingcard leetcode">
                 <h1 class="name-title"><span class="leet" style="color: #a0a0a0;">Leet</span><span class="code" style="color: #ffa116;">Code</span></h1>
@@ -155,7 +155,7 @@
 
     <section class="skills-section">
         <h1 class="section-title">Skills</h1>
-        <div class="skills-box">
+        <div class="skills-box autoDisplay">
             <img clas="skills-image" src="images/animated_image.png" alt="animated_image">
         
 
@@ -186,12 +186,12 @@
 
     <section class="contact">
         <h1 class="section-title">Contact</h1>
-        <div class="contact-info">
+        <div class="contact-info autoBlur">
             <div class="my-information">
                 <div class="mydetails">
-                    <p><i class="fa-solid fa-phone"></i>+91 6200369363</p>
-                    <p><i class="fa-solid fa-paper-plane"></i>ranjitksingh.079@gmail.com</p>
-                    <p><a href="https://www.linkedin.com/in/ranjit-kumar-singh/" target="_blank"><i class="fa-brands fa-linkedin"></i>Ranjit Kumar Singh</a></p>
+                    <p><i class="fa-solid fa-phone gradient"></i>+91 6200369363</p>
+                    <p><i class="fa-solid fa-paper-plane gradient"></i>ranjitksingh.079@gmail.com</p>
+                    <p><a href="https://www.linkedin.com/in/ranjit-kumar-singh/" target="_blank"><i class="fa-brands fa-linkedin gradient"></i>Ranjit Kumar Singh</a></p>
                 </div>
 
                 <div class="contact-icons">
@@ -201,25 +201,27 @@
                 </div>
             </div>
 
-            <div class="contact-form">
-                <p>Whether it's a message, suggestion, opportunity, or just a hello — drop it below and let's connect! </p>
+            <div class="contact-form autoBlur">
+                <p>Let's <span class="gradient">connect</span></p>
                 <div class="details">
                     <form>
                         <label for="fullname">Full Name</label><br>
-                        <input type="text" id="fullname" name="fullname"><br><br>
+                        <input type="text" id="fullname" name="fullname" placeholder="Your Full Name"><br><br>
                         <label for="email">Email</label><br>
-                        <input type="email" id="email" name="email"><br><br>
+                        <input type="email" id="email" name="email" placeholder="Your Email"><br><br>
                         <label for="message">Message</label><br>
-                        <textarea name="message" id="message" placeholder="Message"></textarea>
+                        <input type="text" name="message" id="message" placeholder="Message"></input>
                     </form>
                     <br>
-                    <button>Message</button>
+                    <button><i class="fa-solid fa-paper-plane"></i>   Send Message</button>
                 </div>
             </div>
         </div>
     </section>
 
-
+    <footer>
+        <h1>copyright <i class="fa-regular fa-copyright"></i> 2025 Ranjit | All rights are reserved</h1>
+    </footer>
 
     <script src="script.js"></script>
 </body>
