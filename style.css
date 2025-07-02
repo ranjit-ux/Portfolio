@@ -360,24 +360,21 @@ header ul a:hover{
 .coding-profile-cards{
     display: grid;
     grid-template-columns: repeat(4,1fr);
-    grid-template-rows: repeat(2,1fr);
+    grid-template-rows: repeat(1,1fr);
     height:70%;
     width:80%;
     margin: 5rem;
-    row-gap: 2rem;
     column-gap: 2rem;
 }
 
 .codingcard{
     display: flex;
     justify-content: center;
-    align-items: flex-start;
-    flex-wrap: wrap;
-    flex-direction: column;
-    width:auto;
-    height:auto;
+    align-items: center;
+    width:100%;
+    height:70%;
     border:1px solid gray;
-    border-radius: 2%;
+    border-radius: 5%;
     box-shadow: 0 0 5px #72a1de68;
     transition: 0.3s;
 }
@@ -389,21 +386,17 @@ header ul a:hover{
 
 .leetcode{
     grid-column-start: 1;
-    grid-column-end: 3;
-    grid-row-start: 1;
-    grid-row-end: 2;
+    grid-column-end: 2;
     
 }
 .leetcode img{
     width:100%;
     height:auto;
-    display: block;
+    display:block;
 }
 .GfG{
-    grid-column-start: 3;
-    grid-column-end: 5;
-    grid-row-start: 1;
-    grid-row-end: 2;
+    grid-column-start: 2;
+    grid-column-end: 3;
 }
 .GfG img{
     width:100%;
@@ -411,10 +404,8 @@ header ul a:hover{
     display: block;
 }
 .codechef{
-    grid-column-start: 1;
-    grid-column-end: 3;
-    grid-row-start: 2;
-    grid-row-end: 3;
+    grid-column-start: 3;
+    grid-column-end: 4;
 }
 .codechef img{
     width:100%;
@@ -422,10 +413,8 @@ header ul a:hover{
     display: block;
 }
 .github{
-    grid-column-start: 3;
+    grid-column-start: 4;
     grid-column-end: 5;
-    grid-row-start: 2;
-    grid-row-end: 3;
 }
 .github h1{
     margin-left: 40%;
@@ -461,7 +450,7 @@ header ul a:hover{
     position: relative;
     width: 80%;
     height: 100vh;
-    margin-top: 5rem;
+    margin-top: 8rem;
     margin-bottom: 550px;
 }
 .my-project .section-title{
