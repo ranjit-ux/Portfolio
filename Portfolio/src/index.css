@@ -1,0 +1,42 @@
+@import "tailwindcss";
+
+body {
+  background-color: #282C33;
+  font-family: "Fira Code", monospace;
+}
+
+@layer components {
+  .primary {
+    @apply text-[#C778DD];
+  }
+
+  .text-primary {
+    @apply text-[#ABB2BF];
+  }
+
+  .glowing {
+    @apply opacity-100 scale-105 drop-shadow-[0_0_12px_rgba(199,120,221,0.35)];
+  }
+}
+
+/* animations must live OUTSIDE layers */
+
+@keyframes floatSlow {
+  0% { transform: translateY(0); }
+  50% { transform: translateY(-6px); }
+  100% { transform: translateY(0); }
+}
+
+@keyframes floatReverse {
+  0% { transform: translateY(0); }
+  50% { transform: translateY(6px); }
+  100% { transform: translateY(0); }
+}
+
+.animate-floatSlow {
+  animation: floatSlow 6s ease-in-out infinite;
+}
+
+.animate-floatReverse {
+  animation: floatReverse 7s ease-in-out infinite;
+}

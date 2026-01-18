@@ -1,0 +1,31 @@
+import React from 'react'
+import ContactItem from '../components/ContactIcon'
+import { DiscordLogo, FiverrLogo, GmailLogo, LinkedinLogo, UpworkLogo, XLogo } from '../assets/images'
+import ContactForm from '../components/ContactForm'
+const Contact = () => {
+  return (
+    <div>
+      <section className="py-14">
+        <h1 className="text-3xl font-bold text-white mb-4">
+            <span className="primary text-4xl">/</span>contacts
+        </h1>
+        <div className='flex justify-between'>
+            <div className='w-1/2 mt-10 text-primary'>
+                <ContactForm/>
+            </div>
+            <div className='w-1/2  flex flex-col justify-center items-center -mt-20' > 
+                <p className='text-white text-xl font-semibold mb-8'><span className='primary'>#</span>all-media</p> 
+                <ContactItem icon={LinkedinLogo} label="Ranjit Kumar Singh" link="https://www.linkedin.com/in/ranjit-kumar-singh/"  />
+                <ContactItem icon={XLogo} label="@CodeWith_Ranjit" link="https://x.com/CodeWith_Ranjit" />
+                <ContactItem icon={GmailLogo} label="ranjitksingh.079@gmail.com" link="mailto:ranjitksingh.079@gmail.com" />
+                <ContactItem icon={DiscordLogo} label="@ranjiitt" link="https://discord.com/" />
+                <ContactItem icon={UpworkLogo} label="Ranjit Kumar S" link="https://www.upwork.com/freelancers/~01c68da0c834d4fbb6?mp_source=share" />
+                <ContactItem icon={FiverrLogo} label="@ranjit_ksingh" link="https://www.fiverr.com/s/LdbXayp" />
+            </div>
+        </div>
+      </section>
+    </div>
+  )
+}
+
+export default Contact
