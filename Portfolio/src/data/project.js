@@ -7,7 +7,7 @@ export const projects = [
     description:
       "Designed and developed a high-performance personal portfolio featuring a modern dark theme, smooth navigation, and reusable components to present projects and professional identity.",
     image: PortfolioProject,
-    liveUrl: "https://your-portfolio-live-link.com",
+    liveUrl: "https://portfolio-0ylk.onrender.com",
   },
   {
     id: 4,
