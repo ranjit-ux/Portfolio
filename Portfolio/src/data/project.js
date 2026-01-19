@@ -23,7 +23,7 @@ export const projects = [
     description:
       "A clean and responsive currency converter that allows users to convert amounts between multiple currencies using real-time exchange rates through an intuitive interface.",
     image: CurrecnyConverter,
-    liveUrl: "https://notes-app-7w6j.onrender.com/", // replace with your actual converter link if different
+    liveUrl: "https://currecnyconverter-36qm.onrender.com/", // replace with your actual converter link if different
   },
   {
     id: 3,

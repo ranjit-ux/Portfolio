@@ -20,7 +20,7 @@ const Project = () => {
           title="To-Do List App"
           desc="Developed a minimal and responsive to-do list application with task creation and deletion, focused on simplicity and usability."
           techstack={["HTML", "CSS", "ReactJS"]}
-          githubUrl="https://github.com/ranjit-ux/todo-list"
+          githubUrl="https://reacttodo-8fzy.onrender.com/"
         />
 
           <NewProjectCard
@@ -28,7 +28,7 @@ const Project = () => {
           title="Currency Converter"
           desc="Built a real-time currency converter with an intuitive UI, allowing users to convert between multiple currencies using live exchange rates."
           techstack={["HTML", "CSS", "JavaScript", "API"]}
-          githubUrl="https://github.com/ranjit-ux/currency-converter"
+          githubUrl="https://currecnyconverter-36qm.onrender.com/"
         />
 
           <NewProjectCard 
@@ -36,7 +36,7 @@ const Project = () => {
             title="Simon Says Game"
             desc="Implemented a browser-based Simon Says game focusing on state management, game logic, and user interaction."
             techstack={["HTML","CSS","JavaScript"]}
-            githubUrl="#"
+            githubUrl="https://simon-game-xbq7.onrender.com/"
           />
         </div>
     </section>

@@ -38,7 +38,9 @@ import UpworkLogo from "./UpworkLogo.png";
 import XLogo from "./XLogo.avif";
 import LinkedinLogo from "./LinkedinLogo.png";
 import upworkblack from "./upworkblack.png";
+import render from "./render.png";
 export {
+  render,
   PortfolioProject,
   ReactTODO,
   CurrecnyConverter,
