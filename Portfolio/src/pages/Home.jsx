@@ -170,7 +170,7 @@ import Footer from "../components/Footer";
         handle="ranjiitsingh"
         stats={[
           { label: "Problems Solved", value: 600, suffix: "+" },
-          { label: "Max Rating", value: 1674 },
+          { label: "Max Rating", value: 1683 },
         ]}
         desc="Consistent practice in data structures and algorithms, with a focus on problem clarity, edge-case handling, and optimized solutions. Regular participation in problem-solving to strengthen fundamentals."
         link="https://leetcode.com/u/ranjiitsingh/"
@@ -181,8 +181,8 @@ import Footer from "../components/Footer";
         platform="Codeforces"
         handle="ranjitSingh"
         stats={[
-          { label: "Best Rank", value: 3102 },
-          { label: "Max Rating", value: 1124 },
+          { label: "Best Rank", value: 1782 },
+          { label: "Max Rating", value: 1241 },
         ]}
         desc="Active participation in competitive programming contests, gaining experience with time-bound problem solving, ranking dynamics, and implementing efficient solutions under constraints."
         link="https://codeforces.com/profile/ranjitSingh"
