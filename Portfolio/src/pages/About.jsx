@@ -7,10 +7,10 @@ const About = () => {
   return (
     <section className="py-20">
       <div>
-        <div className="flex gap-14 items-start">
+        <div className="flex flex-col md:flex-row gap-14 items-start">
           
           {/* LEFT CONTENT */}
-          <div className="w-[60%]">
+          <div className="w-full md:w-[60%]">
             <h1 className="text-3xl font-bold text-white mb-2">
               <span className="primary text-4xl">/</span>about me
             </h1>
@@ -24,7 +24,7 @@ const About = () => {
           </div>
 
           {/* RIGHT VISUAL */}
-          <div className="relative w-[40%] h-[380px] rounded-lg backdrop-blur-sm">
+          <div className="hidden md:block relative w-[40%] h-[380px] rounded-lg backdrop-blur-sm">
             
             {/* dotted grid */}
             <img

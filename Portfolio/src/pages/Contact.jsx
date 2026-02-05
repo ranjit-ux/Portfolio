@@ -9,7 +9,7 @@ const Contact = () => {
         <h1 className="text-3xl font-bold text-white mb-4">
             <span className="primary text-4xl">/</span>contacts
         </h1>
-        <div className='flex justify-between'>
+        <div className='flex flex-col md:flex-row gap-30 justify-between items-center'>
             <div className='w-1/2 mt-10 text-primary'>
                 <ContactForm/>
             </div>

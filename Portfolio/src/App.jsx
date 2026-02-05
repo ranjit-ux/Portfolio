@@ -10,29 +10,31 @@ import About from "./pages/About";
 import { DotsPng, Rectangle, StyleDefaultPng, StyleDefaultSvg } from "./assets/images";
 const App = () => {
   return (
-    <div className="flex bg-[#1f232a] min-h-screen">
+    <div className="min-h-screen bg-[#1f232a]">
+      <div className="flex">
 
-      {/* Left Sidebar */}
-      <LeftNavbar />
+      
+        {/* Left Sidebar */}
+        <LeftNavbar />
 
-      {/* Main Content */}
-      <div className="flex-1 flex flex-col items-center">
-        
-        <div className="w-full max-w-[1024px]">
-          <TopNavbar />
+        {/* Main Content */}
+        <div className="flex-1 flex flex-col items-center">
           
-          {/* 🔥 PAGE SWITCHING HAPPENS HERE */}
-          <Routes>
-            <Route path="/" element={<Home />} />
-            <Route path="/projects" element={<Project />} />
-            <Route path="/contact" element={<Contact/>}/>
-            <Route path="/about" element={<About/>}/>
-          </Routes>
+          <div className="w-full max-w-[1024px] px-4 md:px-0">
+            <TopNavbar />
+            
+            <Routes>
+              <Route path="/" element={<Home />} />
+              <Route path="/projects" element={<Project />} />
+              <Route path="/contact" element={<Contact/>}/>
+              <Route path="/about" element={<About/>}/>
+            </Routes>
 
-          <Footer/>
+            <Footer/>
+
+          </div>
 
         </div>
-
       </div>
 
     </div>

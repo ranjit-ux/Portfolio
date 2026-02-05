@@ -1,5 +1,5 @@
 import React from "react";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import Quote from "../components/Quote";
 import { useEffect, useState } from "react";
 import ProjectCard from "../components/ProjectCard";
@@ -10,6 +10,7 @@ import Footer from "../components/Footer";
     const Home = () => {
 
         const [mouse, setMouse] = useState({ x: 0, y: 0 });
+        const navigate = useNavigate();
 
     useEffect(() => {
     const handleMove = (e) => {
@@ -27,33 +28,33 @@ import Footer from "../components/Footer";
       <div className="w-full max-w-[1024px] px-6 md:px-0">
 
       {/* Hero */}
-      <section className="w-full max-w-[1024px] min-h-[423px] px-6 md:px-0 relative flex  md:flex-row items-center">
+      <section className="w-full max-w-[1024px] min-h-[423px] px-6 md:px-0 relative flex felx-col  md:flex-row items-center gap-10">
         {/* Left */}
-        <div className="w-full md:w-1/2 pt-12 md:pt-20">
+        <div className="w-full md:w-1/2 pt-12 md:pt-20 text-center md:text-left">
           <h1 className="text-[32px] md:text-[36px] leading-[1.25] text-white font-semibold">
             I turn complex ideas into high-performance{" "}
             <span className="primary">web products</span>
           </h1>
 
-          <p className="mt-8 text-primary text-[16px] md:text-[17px] w-full md:w-[463px]">
+          <p className="mt-6 text-primary text-[16px] md:text-[17px] w-full md:w-[463px] mx-auto md:mx-0">
             From clean UI to production-ready backend I ship software that
             actually works in the real world.
           </p>
 
-          <a
-          href="/contact"
+          <button
+          onClick={() => navigate("/contact")}
           className="inline-block mt-8 px-6 py-3 border border-[#C778DD]
-            text-white text-sm tracking-wide
+            text-white text-sm tracking-wide mx-auto md:mx-0
             hover:bg-[#C778DD] hover:text-[#282C33] transition
             shadow-[0_0_0px_rgba(199,120,221,0)]
             hover:shadow-[0_0_10px_rgba(199,120,221,0.6)]"
         >
           Let’s build something
-        </a>
+        </button>
         
         </div>
         {/* Right */}
-        <div className="w-full md:w-1/2 relative h-[300px] md:h-[423px] overflow-hidden top-6 ">
+        <div className="w-full md:w-1/2 relative h-[300px] md:h-[423px] overflow-hidden  ">
           {/* bottom fade (kills jacket) */}
           <div className="absolute bottom-0 left-0 w-full h-24 bg-gradient-to-t from-[#1E222A] via-[#1E222A]/100 to-transparent z-20 pointer-events-none" />
 
@@ -66,7 +67,10 @@ import Footer from "../components/Footer";
             style={{
                 transform: `translate(${mouse.x * -5}px, ${mouse.y * -5}px)`
             }}
-            className="absolute bottom-[-60px] right-10 w-[260px] md:w-[320px] z-[1] transition-transform duration-200 ease-out"
+           className="absolute bottom-[-40px] md:bottom-[-60px]
+  right-1/2 md:right-10 translate-x-1/2 md:translate-x-0
+  w-[220px] sm:w-[260px] md:w-[320px]
+  z-[1] transition-transform duration-200 ease-out"
           />
 
 
@@ -98,7 +102,7 @@ import Footer from "../components/Footer";
       </section>
 
       {/* PROJECTS */}
-      <section id="projects" className="mt-82 px-6 md:px-0">
+      <section id="projects" className="mt-60 px-6 md:px-0">
 
         {/* Header */}
         <div className="flex items-center justify-between mb-10">
@@ -107,9 +111,9 @@ import Footer from "../components/Footer";
           <div className="w-[512px] h-[1px] bg-[#C778DD] opacity-80" />
           </div>
           
-          <a href="/projects" className="text-[#ABB2BF] hover:text-white cursor-pointer">
+          <button onClick={()=>navigate("/projects")} className="text-[#ABB2BF] hover:text-white cursor-pointer">
             View all →
-          </a>
+          </button>
           
         </div>
 
@@ -152,10 +156,10 @@ import Footer from "../components/Footer";
         </div>
 
   {/* Content */}
-  <div className="flex gap-12 items-start">
+  <div className="flex flex-col md:flex-row gap-12 items-start">
 
     {/* LEFT: decorative block */}
-    <div className="w-[300px] h-[282px] relative shrink-0">
+    <div className="hidden md:block w-[300px] h-[282px] relative shrink-0">
       <img src={StyleOutlinePng} className="absolute bottom-0 left-6 w-[113px]" />
       <img src={DotsPng} className="absolute top-5 left-0 w-[73px]" />
       <img src={Rectangle} className="absolute bottom-10 right-0" />
@@ -202,9 +206,9 @@ import Footer from "../components/Footer";
           <div className="w-[200px] h-[1px] bg-[#C778DD] opacity-80" />
           </div>
           
-          <a href="/about" className="text-[#ABB2BF] hover:text-white cursor-pointer">
+          <button onClick={()=>navigate("/about")} className="text-[#ABB2BF] hover:text-white cursor-pointer">
             View all →
-          </a>
+          </button>
         </div>
 
   {/* Skills */}
@@ -265,12 +269,12 @@ import Footer from "../components/Footer";
       <div className="w-[200px] h-[1px] bg-[#C778DD] opacity-80" />
     </div>
 
-    <a
-      href="/contact"
+    <button
+      onClick={() => navigate("/contact")}
       className="text-[#ABB2BF] hover:text-white transition"
     >
       contact me →
-    </a>
+    </button>
   </div>
 
   {/* Body */}

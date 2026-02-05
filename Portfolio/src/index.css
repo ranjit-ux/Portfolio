@@ -1,8 +1,11 @@
 @import "tailwindcss";
-
-body {
-  background-color: #282C33;
+html,
+body,
+#root {
+  background-color: #1f232a;
+  min-height: 100%;
   font-family: "Fira Code", monospace;
+  overscroll-behavior-y: none;
 }
 
 @layer components {
