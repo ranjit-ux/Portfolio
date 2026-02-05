@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 import Quote from "../components/Quote";
 import { useEffect, useState } from "react";
 import ProjectCard from "../components/ProjectCard";
-import { StyleOutlinePng, DotsPng, Heroimg,Notes,SimonSays,QuizApp, Rectangle, LeetCode,CodeForces, PortfolioProject } from "../assets/images";
+import { StyleOutlinePng, DotsPng, Heroimg,Notes,SimonSays,QuizApp, Rectangle, LeetCode,CodeForces, PortfolioProject, MatchMyResume } from "../assets/images";
 import CodingProfileCard from "../components/CodingProfileCard";
 import App from "../App";
 import Footer from "../components/Footer";
@@ -116,11 +116,11 @@ import Footer from "../components/Footer";
         {/* Grid */}
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6 items-start">
           <ProjectCard 
-            projectimg={QuizApp}
-            title="Quiz Platform"
-            desc="Designed and built a full-stack quiz platform with user authentication, timed quizzes, score evaluation, and RESTful APIs."
-            techstack={["MongoDB","Express","React","Node.js"]}
-            link="https://countries-capital-quiz-production.up.railway.app/"
+            projectimg={MatchMyResume}
+            title="Match My Resume"
+            desc="Match My Resume is an AI-powered platform that matches resumes with job descriptions, identifies skill gaps, and optimizes profiles for higher ATS scores and interview shortlisting."
+            techstack={["React.js","Tailwind CSS","Node.js","MongoDB","JWT","Rest APIs"]}
+            link="https://matchmyresume-frontend.onrender.com/"
           />
           <ProjectCard 
             projectimg={Notes}
@@ -134,7 +134,7 @@ import Footer from "../components/Footer";
             title="Personal Portfolio Website"
             desc="Built a personal portfolio with a modern dark theme, smooth navigation, and reusable components to showcase projects, skills, and professional identity."
             techstack={["React", "Tailwind CSS", "JavaScript"]}
-            link="https://github.com/ranjit-ux/portfolio"
+            link="https://portfolio-0ylk.onrender.com/"
           />
         </div>
 
@@ -170,7 +170,7 @@ import Footer from "../components/Footer";
         handle="ranjiitsingh"
         stats={[
           { label: "Problems Solved", value: 600, suffix: "+" },
-          { label: "Max Rating", value: 1683 },
+          { label: "Max Rating", value: 1712 },
         ]}
         desc="Consistent practice in data structures and algorithms, with a focus on problem clarity, edge-case handling, and optimized solutions. Regular participation in problem-solving to strengthen fundamentals."
         link="https://leetcode.com/u/ranjiitsingh/"
@@ -182,7 +182,7 @@ import Footer from "../components/Footer";
         handle="ranjitSingh"
         stats={[
           { label: "Best Rank", value: 1782 },
-          { label: "Max Rating", value: 1241 },
+          { label: "Max Rating", value: 992 },
         ]}
         desc="Active participation in competitive programming contests, gaining experience with time-bound problem solving, ranking dynamics, and implementing efficient solutions under constraints."
         link="https://codeforces.com/profile/ranjitSingh"

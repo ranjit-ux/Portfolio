@@ -39,7 +39,9 @@ import XLogo from "./XLogo.avif";
 import LinkedinLogo from "./LinkedinLogo.png";
 import upworkblack from "./upworkblack.png";
 import render from "./render.png";
+import MatchMyResume from "./Projects/MatchMyResume.png";
 export {
+  MatchMyResume,
   render,
   PortfolioProject,
   ReactTODO,

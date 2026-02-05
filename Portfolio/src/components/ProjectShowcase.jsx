@@ -50,7 +50,7 @@ const ProjectsShowcase = () => {
             {activeProject.title}
           </h2>
 
-          <p className="text-white/70 mt-2 max-w-xl">
+          <p className="text-white/70 mt-2 ">
             {activeProject.description}
           </p>
 
