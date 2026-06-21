@@ -3,7 +3,7 @@ import { Link, useNavigate } from "react-router-dom";
 import Quote from "../components/Quote";
 import { useEffect, useState } from "react";
 import ProjectCard from "../components/ProjectCard";
-import { StyleOutlinePng, DotsPng, Heroimg,Notes,SimonSays,QuizApp, Rectangle, LeetCode,CodeForces, PortfolioProject, MatchMyResume } from "../assets/images";
+import { StyleOutlinePng, DotsPng, Heroimg,Notes,SimonSays,QuizApp, Rectangle, LeetCode,CodeForces, PortfolioProject, MatchMyResume,AlgoRetention,PrepWiseAI } from "../assets/images";
 import CodingProfileCard from "../components/CodingProfileCard";
 import App from "../App";
 import Footer from "../components/Footer";
@@ -118,27 +118,47 @@ import Footer from "../components/Footer";
         </div>
 
         {/* Grid */}
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-6 items-start">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-6 auto-rows-fr items-start">
+          
+          <ProjectCard
+  projectimg={AlgoRetention}
+  title="AlgoRetention"
+  desc="An intelligent spaced-repetition platform that helps programmers retain solved coding problems using the SM-2 algorithm, ensuring long-term mastery instead of short-term memorization."
+  techstack={[
+    "React.js",
+    "Tailwind CSS",
+    "Node.js",
+    "Express.js",
+    "MongoDB",
+    "Google OAuth",
+    "JWT",
+    "SM-2 Algorithm",
+    "REST APIs"
+  ]}
+  link="https://algo-retention.vercel.app"
+/>
+          <ProjectCard
+  projectimg={PrepWiseAI}
+  title="PrepWise AI"
+  desc="PrepWise AI is an AI-powered interview coaching platform that simulates real technical interviews, provides instant personalized feedback, tracks progress, and helps candidates prepare with confidence."
+  techstack={[
+    "React.js",
+    "Tailwind CSS",
+    "Node.js",
+    "Express.js",
+    "MongoDB",
+    "JWT",
+    "Groq API",
+    "REST APIs"
+  ]}
+  link="https://prep-wise-ai-nu.vercel.app/"
+/>
           <ProjectCard 
             projectimg={MatchMyResume}
             title="Match My Resume"
-            desc="Match My Resume is an AI-powered platform that matches resumes with job descriptions, identifies skill gaps, and optimizes profiles for higher ATS scores and interview shortlisting."
+            desc="An AI-powered ATS optimization platform that compares resumes against job descriptions, highlights missing skills, identifies improvement areas, and helps candidates increase their chances of interview shortlisting."
             techstack={["React.js","Tailwind CSS","Node.js","MongoDB","JWT","Rest APIs"]}
             link="https://matchmyresume-frontend.onrender.com/"
-          />
-          <ProjectCard 
-            projectimg={Notes}
-            title="Notes Manager"
-            desc="Developed a secure notes manager with CRUD operations, protected routes, and responsive UI for daily productivity."
-            techstack={["MongoDB","Express","React","Node.js"]}
-            link="https://notes-app-7w6j.onrender.com/"
-          />
-          <ProjectCard
-            projectimg={PortfolioProject}
-            title="Personal Portfolio Website"
-            desc="Built a personal portfolio with a modern dark theme, smooth navigation, and reusable components to showcase projects, skills, and professional identity."
-            techstack={["React", "Tailwind CSS", "JavaScript"]}
-            link="https://portfolio-0ylk.onrender.com/"
           />
         </div>
 
@@ -173,8 +193,8 @@ import Footer from "../components/Footer";
         platform="LeetCode"
         handle="ranjiitsingh"
         stats={[
-          { label: "Problems Solved", value: 600, suffix: "+" },
-          { label: "Max Rating", value: 1712 },
+          { label: "Problems Solved", value: 1050, suffix: "+" },
+          { label: "Max Rating", value: 1860 },
         ]}
         desc="Consistent practice in data structures and algorithms, with a focus on problem clarity, edge-case handling, and optimized solutions. Regular participation in problem-solving to strengthen fundamentals."
         link="https://leetcode.com/u/ranjiitsingh/"
@@ -186,7 +206,7 @@ import Footer from "../components/Footer";
         handle="ranjitSingh"
         stats={[
           { label: "Best Rank", value: 1782 },
-          { label: "Max Rating", value: 992 },
+          { label: "Max Rating", value: 1261 },
         ]}
         desc="Active participation in competitive programming contests, gaining experience with time-bound problem solving, ranking dynamics, and implementing efficient solutions under constraints."
         link="https://codeforces.com/profile/ranjitSingh"

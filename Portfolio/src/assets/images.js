@@ -11,6 +11,8 @@ import twitter from "./twitter3.avif";
 import CurrecnyConverter from "./Projects/Currency_Converter.png";
 import ReactTODO from "./Projects/React_TODO.png";
 import PortfolioProject from "./Projects/Portfolio.png";
+import AlgoRetention from "./Projects/AlgoRetention.png";
+import PrepWiseAI from "./Projects/PrepWise.png"
 // Icons
 import Discord from "./Discord.svg";
 import DotsPng from "./Dots.png";
@@ -41,6 +43,8 @@ import upworkblack from "./upworkblack.png";
 import render from "./render.png";
 import MatchMyResume from "./Projects/MatchMyResume.png";
 export {
+  AlgoRetention,
+  PrepWiseAI,
   MatchMyResume,
   render,
   PortfolioProject,

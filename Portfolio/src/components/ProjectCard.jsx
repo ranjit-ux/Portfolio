@@ -25,12 +25,12 @@ const ProjectCard = ({projectimg,title,desc,techstack,link}) => {
       </div>
 
       {/* Content */}
-      <div className="px-4 pb-6">
+      <div className="px-4 pb-6 flex flex-col flex-1">
         <h1 className="text-white text-lg mb-2">{title}</h1>
-        <p className="text-[#ABB2BF] text-sm mb-4">
+        <p className="text-[#ABB2BF] text-sm flex-1">
           {desc}
         </p>
-        <div className="flex justify-between">
+        <div className="flex justify-between mt-6">
           <Link 
             to={link}
             className="w-[120px] flex items-center justify-center gap-2 border rounded-xl border-[#C778DD] text-[#abb2bf] px-4 py-2 text-sm font-semibold hover:bg-[#C778DD] hover:text-white transition">
