@@ -20,6 +20,7 @@ import DotsSvg from "./Dots.svg";
 import Email from "./Email.jpg";
 import GithubPng from "./Github (1).png";
 import GithubSvg from "./Github.svg";
+import GitHubWeb from "./GitHubLogo.webp"
 import Landmark from "./Landmark.svg";
 import Linkedin from "./linkedin2.png";
 import Telegram from "./Telegram.svg";
@@ -42,6 +43,7 @@ import LinkedinLogo from "./LinkedinLogo.png";
 import upworkblack from "./upworkblack.png";
 import render from "./render.png";
 import MatchMyResume from "./Projects/MatchMyResume.png";
+import Caller from "./Caller image.png"
 export {
   AlgoRetention,
   PrepWiseAI,
@@ -53,8 +55,10 @@ export {
   upworkblack,
   LinkedinLogo,
   XLogo,
+  Caller,
   UpworkLogo,
   GitHubLogo,
+  GitHubWeb,
   FiverrLogo,
   GmailLogo,
   DiscordLogo,

@@ -19,7 +19,7 @@ const SkillinAbout = () => {
             Thinking in Fundamentals
           </p>
           <p className="text-primary text-xs mb-3 opacity-70">
-            The skills I rely on before touching any framework
+            <span className='primary'>1500+ problems</span> solved. LeetCode <span className='primary'>Knight</span>. I understand tradeoffs at the algorithm level before I touch any framework.
           </p>
           <p className="text-primary text-sm leading-6">
             C++ · Data Structures · Algorithms · Problem Solving · Debugging · Complexity Analysis
@@ -32,10 +32,10 @@ const SkillinAbout = () => {
             Building Real Products
           </p>
           <p className="text-primary text-xs mb-3 opacity-70">
-            Turning ideas into usable, maintainable interfaces
+            Deployed 3+ products. <span className='primary'>200+ organic users</span>. I build interfaces that hold up in production not just in demos.
           </p>
           <p className="text-primary text-sm leading-6">
-            JavaScript · React · Tailwind CSS · REST APIs · Node.js · Express
+            React · JavaScript · Tailwind CSS · REST APIs · Node.js · Express· JWT Authentication · OAuth · MongoDB · SQL
           </p>
         </div>
 
@@ -45,10 +45,23 @@ const SkillinAbout = () => {
             Shipping & Owning Systems
           </p>
           <p className="text-primary text-xs mb-3 opacity-70">
-            Tools that help me ship reliably and iterate fast
+            I don't just write code. I deploy it, monitor it, and own it end-to-end. From first commit to live users.
           </p>
           <p className="text-primary text-sm leading-6">
-            Git · Linux · MongoDB · PostgreSQL · VS Code · Deployment Basics
+            Git · GitHub · PostgreSQL · Visual Studio Code · Postman · Vercel
+          </p>
+        </div>
+
+        {/* Shipping */}
+        <div className="border border-white/10 rounded-lg p-5 hover:border-[#ABB2BF] transition ">
+          <p className="text-white font-semibold mb-1">
+            CS Fundamentals
+          </p>
+          <p className="text-primary text-xs mb-3 opacity-70">
+            The theory behind every system I've built. These aren't just coursework they're the lens I use while building things.
+          </p>
+          <p className="text-primary text-sm leading-6">
+            Operating System · Database Management System · Object Oriented Programming · Computer Networks · Scheduling · System Design
           </p>
         </div>
 
@@ -61,5 +74,6 @@ const SkillinAbout = () => {
     </section>
   )
 }
+
 
 export default SkillinAbout

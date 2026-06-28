@@ -1,6 +1,6 @@
 import React from 'react'
 import ContactItem from '../components/ContactIcon'
-import { DiscordLogo, FiverrLogo, GmailLogo, LinkedinLogo, UpworkLogo, XLogo } from '../assets/images'
+import { DiscordLogo, FiverrLogo, GmailLogo, LinkedinLogo, UpworkLogo, XLogo,Caller,GitHubWeb } from '../assets/images'
 import ContactForm from '../components/ContactForm'
 const Contact = () => {
   return (
@@ -16,10 +16,10 @@ const Contact = () => {
             <div className='w-1/2  flex flex-col justify-center items-center -mt-20' > 
                 <p className='text-white text-xl font-semibold mb-8'><span className='primary'>#</span>all-media</p> 
                 <ContactItem icon={LinkedinLogo} label="Ranjit Kumar Singh" link="https://www.linkedin.com/in/ranjit-kumar-singh/"  />
-                <ContactItem icon={XLogo} label="@CodeWith_Ranjit" link="https://x.com/CodeWith_Ranjit" />
+                <ContactItem icon={XLogo} label="Currently Inactive" link="" />
                 <ContactItem icon={GmailLogo} label="ranjitksingh.079@gmail.com" link="mailto:ranjitksingh.079@gmail.com" />
-                <ContactItem icon={DiscordLogo} label="@ranjiitt" link="https://discord.com/" />
-                <ContactItem icon={UpworkLogo} label="Ranjit Kumar S" link="https://www.upwork.com/freelancers/~01c68da0c834d4fbb6?mp_source=share" />
+                <ContactItem icon={Caller} label="+91 6200369363" link="tel:+916200369363" />
+                <ContactItem icon={GitHubWeb} label="ranjit-ux" link="https://github.com/ranjit-ux" />
                 <ContactItem icon={FiverrLogo} label="@ranjit_ksingh" link="https://www.fiverr.com/s/LdbXayp" />
             </div>
         </div>

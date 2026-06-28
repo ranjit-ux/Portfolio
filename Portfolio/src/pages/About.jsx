@@ -19,7 +19,10 @@ const About = () => {
             </p>
 
             <p className="text-primary text-[15px] leading-7">
-              I’m <span className="font-semibold text-white">Ranjit Kumar Singh</span>, an engineer who values ownership, clarity, and impact. I enjoy working in fast-moving environments where ideas are turned into production-ready systems with intention and speed, backed by strong fundamentals in data structures, algorithms, and system thinking. I’m comfortable navigating ambiguity, making trade-offs, and owning problems end-to-end—from definition to implementation and refinement—while keeping a sharp focus on clean abstractions, performance, and collaboration. I approach engineering as a long-term craft, learn quickly, adapt easily, and enjoy building with people who move fast without compromising on quality.
+              Every engineer says they're passionate. Let me show you instead.
+I'm <span className='font-semibold text-white'>Ranjit</span> a final year student at NIT Bhopal who spent the last year building real products for real users, not just pushing code to private repos. <span className='font-semibold text-white'>AlgoRetention</span>, my spaced-repetition DSA tracker, crossed 200+ organic signups and 400+ DSA questions recorded. PrepWise AI lets engineers practice with AI-powered feedback on their actual code. These aren't projects they're products I designed, built, broke, fixed, and shipped.
+I come alive at the intersection of hard problems and clean solutions. I have deep roots in DSA and algorithms <span className='font-semibold text-white'>1500+ problems</span>, LeetCode Knight and CodeForces Pupil paired with a genuine obsession for system thinking and building at scale. <br />
+I don't wait to be assigned interesting work. I find it, frame it, and ship it.
             </p>
           </div>
 
@@ -65,6 +68,7 @@ const About = () => {
         <div>
           <SkillinAbout/>
         </div>
+
         <div>
           <Facts/>
         </div>

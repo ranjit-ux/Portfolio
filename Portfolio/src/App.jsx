@@ -15,7 +15,7 @@ const App = () => {
 
       
         {/* Left Sidebar */}
-        <LeftNavbar />
+        {/* <LeftNavbar /> */}
 
         {/* Main Content */}
         <div className="flex-1 flex flex-col items-center">

@@ -1,5 +1,5 @@
 import React from "react";
-import { Email, Linkedin, twitter } from "../assets/images";
+import { Email, Linkedin, twitter, LinkedinLogo, GmailLogo } from "../assets/images";
 
 const Footer = () => {
   return (
@@ -30,7 +30,7 @@ const Footer = () => {
               href="mailto:ranjitksingh.079@gmail.com"
               className="hover:scale-110 transition-transform duration-300"
             >
-              <img src={Email} alt="Email" className="w-8 h-8" />
+              <img src={GmailLogo} alt="Email" className="h-9" />
             </a>
 
             <a
@@ -39,11 +39,11 @@ const Footer = () => {
               rel="noreferrer"
               className="hover:scale-110 transition-transform duration-300"
             >
-              <img src={Linkedin} alt="LinkedIn" className="w-8 h-8" />
+              <img src={LinkedinLogo} alt="LinkedIn" className="w-8 h-8" />
             </a>
 
             <a
-              href="https://x.com/CodeWith_Ranjit"
+              href=""
               target="_blank"
               rel="noreferrer"
               className="hover:scale-110 transition-transform duration-300"
